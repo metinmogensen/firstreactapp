@@ -41,6 +41,7 @@ class App extends Component {
   render() {
     console.log('render');
 
+    // resturcturerer da deet ser bedre ud en random variable
     const { monsters, searchField } = this.state;
     const { onSearchChange } = this;
 
@@ -50,7 +51,9 @@ class App extends Component {
 
     return (
       <div className="App">
-        <input className='search-box' type='search' placeholder=' Search Monsters'
+        <input className='search-box'
+          type='search'
+          placeholder='Search Monsters'
           onChange={onSearchChange} />
 
         {
