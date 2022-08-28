@@ -42,7 +42,9 @@ class App extends Component {
             return element.name.includes(target)
           })
 
-          console.log(results);
+          this.setState(() => {
+            return { monsters: results }
+          })
         }} />
 
         {
